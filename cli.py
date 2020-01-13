@@ -1,5 +1,5 @@
 import click
-from .http import assult
+#from .http import assult
 
 @click.command()
 @click.option("--requests", '-r', default=500, help="Number of requests")
@@ -11,7 +11,7 @@ def cli(requests, concurrency, json_file, url):
     print(f"Concurrency: {concurrency}")
     print(f"JSON_Fule: {json_file}")
     print(f"URL: {url}")
-    assult(url, requests, concurrency)
+   # assult(url, requests, concurrency)
 
 
 if __name__== "__main__":
